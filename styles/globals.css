@@ -1,3 +1,4 @@
-@tailwind base;
+/* Mantineと競合するのでコメントアウトする */
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
