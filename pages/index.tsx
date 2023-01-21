@@ -1,11 +1,11 @@
-import { Container, Group, Text } from "@mantine/core";
+import { Container, Group, Image } from "@mantine/core";
 import { NextPage } from "next";
 import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Container className="xl">
+    <div>
+      <Container>
         <div className="flex h-20 items-center justify-center gap-60">
           <Link
             href="/"
@@ -41,7 +41,15 @@ const Home: NextPage = () => {
           </Group>
         </div>
       </Container>
-    </>
+      {/* <Container className="xl"> */}
+        <Image
+          // width={1440}
+          // height={480}
+          src="https://source.unsplash.com/random/1480x480/"
+          alt="Unsplash image"
+        />
+      {/* </Container> */}
+    </div>
   );
 };
 
