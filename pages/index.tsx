@@ -14,16 +14,28 @@ const Home: NextPage = () => {
             My Web Site
           </Link>
           <Group>
-            <Link href="/profile" className="no-underline">
+            <Link
+              href="/profile"
+              className=" text-black no-underline hover:text-blue-500"
+            >
               プロフィール
             </Link>
-            <Link href="/blog" className="no-underline">
+            <Link
+              href="/blog"
+              className="text-black no-underline  hover:text-blue-500"
+            >
               ブログ
             </Link>
-            <Link href="/news" className="no-underline">
+            <Link
+              href="/news"
+              className="text-black no-underline  hover:text-blue-500"
+            >
               ポートフォリオ
             </Link>
-            <Link href="/blog" className="no-underline">
+            <Link
+              href="/blog"
+              className="text-black no-underline  hover:text-blue-500"
+            >
               お問い合わせ
             </Link>
           </Group>
