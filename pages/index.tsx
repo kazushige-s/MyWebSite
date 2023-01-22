@@ -1,11 +1,12 @@
-import { Container, Group, Image } from "@mantine/core";
+import { Center, Container, Group, Image, Text } from "@mantine/core";
 import { NextPage } from "next";
 import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Container>
+      {/* ヘッダー */}
+      <Container className="mx-auto">
         <div className="flex h-20 items-center justify-center gap-60">
           <Link
             href="/"
@@ -41,14 +42,24 @@ const Home: NextPage = () => {
           </Group>
         </div>
       </Container>
+
+      {/* ヒーロエリア */}
       {/* <Container className="xl"> */}
-        <Image
-          // width={1440}
-          // height={480}
-          src="https://source.unsplash.com/random/1480x480/"
-          alt="Unsplash image"
-        />
+      <Image
+        // width={1440}
+        // height={480}
+        src="https://source.unsplash.com/random/1480x480/"
+        alt="Unsplash image"
+      />
       {/* </Container> */}
+
+      {/* 新着ブログ */}
+      <Container className="mx-auto mt-10 border-solid border-black">
+        <Center>
+          <Text className="my-10  text-2xl font-bold">最新記事</Text>
+        </Center>
+        <Group></Group>
+      </Container>
     </div>
   );
 };
