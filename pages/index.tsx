@@ -1,8 +1,32 @@
+import { usePosts } from "@/hooks/usePosts";
 import { Center, Container, Group, Image, Text } from "@mantine/core";
 import { NextPage } from "next";
 import Link from "next/link";
 
 const Home: NextPage = () => {
+  const Posts = () => {
+    const { data, error, isLoading, isEmpty } = usePosts();
+
+    console.log(data);
+
+    if (isLoading) {
+      return <div>loading...</div>;
+    }
+    if (error) {
+      return <div>failed to load</div>;
+    }
+    if (isEmpty) {
+      return <div>no data</div>;
+    }
+    return (
+      <ol>
+        {data.map((post: any) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ol>
+    );
+  };
+
   return (
     <div>
       {/* ヘッダー */}
@@ -53,7 +77,7 @@ const Home: NextPage = () => {
       />
       {/* </Container> */}
 
-      {/* 新着ブログ */}
+      {/* 新着ブログ記事 */}
       <Container className="mx-auto mt-10 border-solid border-black">
         <Center>
           <Text className="my-10  text-2xl font-bold">最新記事</Text>
