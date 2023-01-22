@@ -1,7 +1,8 @@
 import { usePosts } from "@/hooks/usePosts";
-import { Center, Container, Group, Image, Text } from "@mantine/core";
+import { Center, Container, Divider, Group, Image, Text } from "@mantine/core";
 import { NextPage } from "next";
 import Link from "next/link";
+import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 const Home: NextPage = () => {
   const Posts = () => {
@@ -30,11 +31,11 @@ const Home: NextPage = () => {
   return (
     <div>
       {/* ヘッダー */}
-      <Container className="mx-auto">
-        <div className="flex h-20 items-center justify-center gap-60">
+      <Container>
+        <div className="flex h-20 items-center justify-between">
           <Link
             href="/"
-            className="font-mono text-2xl font-bold text-black no-underline"
+            className="ml-3 font-mono text-2xl font-bold text-black no-underline"
           >
             My Web Site
           </Link>
@@ -84,6 +85,46 @@ const Home: NextPage = () => {
         </Center>
         <Group></Group>
       </Container>
+
+      {/* フッター */}
+      <Divider my="lg" className="mt-20" />
+      <Container className="flex justify-between">
+        <Group className="ml-3">
+          <BrandTwitter />
+          <BrandInstagram />
+          <BrandGithub />
+        </Group>
+
+        <Group>
+          <Link
+            href="/profile"
+            className=" text-black no-underline hover:text-blue-500"
+          >
+            プロフィール
+          </Link>
+          <Link
+            href="/blog"
+            className="text-black no-underline  hover:text-blue-500"
+          >
+            ブログ
+          </Link>
+          <Link
+            href="/news"
+            className="text-black no-underline  hover:text-blue-500"
+          >
+            ポートフォリオ
+          </Link>
+          <Link
+            href="/blog"
+            className="text-black no-underline  hover:text-blue-500"
+          >
+            お問い合わせ
+          </Link>
+        </Group>
+      </Container>
+      <small>
+        <Text className="my-8 text-center">&copy;2023 My Web Site</Text>
+      </small>
     </div>
   );
 };
