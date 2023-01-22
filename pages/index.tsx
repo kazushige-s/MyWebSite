@@ -90,9 +90,18 @@ const Home: NextPage = () => {
       <Divider my="lg" className="mt-20" />
       <Container className="flex justify-between">
         <Group className="ml-3">
-          <BrandTwitter />
-          <BrandInstagram />
-          <BrandGithub />
+          <Link target="_blank" href="https://twitter.com/eigablog_kazu">
+            <BrandTwitter />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/eigasukisuki_kazu/"
+          >
+            <BrandInstagram />
+          </Link>
+          <Link target="_blank" href="https://github.com/kazushige-s">
+            <BrandGithub />
+          </Link>
         </Group>
 
         <Group>
