@@ -1,5 +1,6 @@
 import { Header } from "@/component/Header";
 import { Hero } from "@/component/Hero";
+import { Info } from "@/component/Info";
 import { usePosts } from "@/hooks/usePosts";
 import { Center, Container, Divider, Group, Text } from "@mantine/core";
 import { NextPage } from "next";
@@ -34,14 +35,8 @@ const Home: NextPage = () => {
     <div>
         <Header />
         <Hero />
+        <Info/>
 
-      {/* 新着ブログ記事 */}
-      <Container className="mx-auto mt-10 border-solid border-black">
-        <Center>
-          <Text className="my-10  text-2xl font-bold">最新記事</Text>
-        </Center>
-        <Group></Group>
-      </Container>
 
       {/* フッター */}
       <Divider my="lg" className="mt-20" />
