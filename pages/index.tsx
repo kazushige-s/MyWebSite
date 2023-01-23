@@ -1,6 +1,7 @@
 import { Header } from "@/component/Header";
+import { Hero } from "@/component/Hero";
 import { usePosts } from "@/hooks/usePosts";
-import { Center, Container, Divider, Group, Image, Text } from "@mantine/core";
+import { Center, Container, Divider, Group, Text } from "@mantine/core";
 import { NextPage } from "next";
 import Link from "next/link";
 import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
@@ -32,15 +33,7 @@ const Home: NextPage = () => {
   return (
     <div>
         <Header />
-      {/* ヒーロエリア */}
-      {/* <Container className="xl"> */}
-      <Image
-        // width={1440}
-        // height={480}
-        src="https://source.unsplash.com/random/1480x480/"
-        alt="Unsplash image"
-      />
-      {/* </Container> */}
+        <Hero />
 
       {/* 新着ブログ記事 */}
       <Container className="mx-auto mt-10 border-solid border-black">
