@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <title>Page title</title>
+        <title>My Web Site</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
