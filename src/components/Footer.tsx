@@ -5,7 +5,7 @@ import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 export const Footer = () => {
   return (
-    <div>
+    <>
       <Divider my="lg" className="mt-20" />
       <Container className="flex justify-between">
         <Group className="ml-3">
@@ -53,6 +53,6 @@ export const Footer = () => {
       <small>
         <Text className="my-8 text-center">&copy;2023 My Web Site</Text>
       </small>
-    </div>
+    </>
   );
 };
