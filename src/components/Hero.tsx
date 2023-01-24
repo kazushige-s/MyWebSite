@@ -1,4 +1,5 @@
 import { Image } from "@mantine/core";
+import React from "react";
 
 export const Hero = () => {
   return (
