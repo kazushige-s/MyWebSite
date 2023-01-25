@@ -10,7 +10,7 @@ export const Info = () => {
             <Text className="my-5 text-2xl font-bold">最新記事</Text>
           </Center>
           <ol className="m-0 mb-5">
-            <li>テスト</li>
+            <li>ダークモードボタンは未対応(勉強中…)</li>
             <li>テスト</li>
             <li>テスト</li>
             <li>テスト</li>
