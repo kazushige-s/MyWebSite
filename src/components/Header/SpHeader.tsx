@@ -1,8 +1,10 @@
 import { MENU } from "@/src/components/Header/menu";
+import { SNS } from "@/src/components/SNS/SNS";
 import { ActionIcon, Burger, Drawer, Group } from "@mantine/core";
 import Link from "next/link";
 import React, { useState } from "react";
 import { X } from "tabler-icons-react";
+import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 export const SpHeader = () => {
   const [opened, setOpened] = useState(false);
@@ -53,6 +55,11 @@ export const SpHeader = () => {
               );
             })}
           </Group>
+
+          {/* SNS */}
+          <div className="mt-10">
+          <SNS/>
+          </div>
         </Drawer>
       )}
     </div>
