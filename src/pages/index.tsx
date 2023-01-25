@@ -1,16 +1,15 @@
-import { Footer } from "src/components/Footer";
-import { Header } from "@/src/components/Header/Header";
 import { Hero } from "src/components/Hero";
 import { Info } from "src/components/Info";
 import { NextPage } from "next";
+import { Layout } from "@/src/components/Layout";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Info />
-      <Footer />
+      <Layout title="My Web Site">
+        <Hero />
+        <Info />
+      </Layout>
     </>
   );
 };

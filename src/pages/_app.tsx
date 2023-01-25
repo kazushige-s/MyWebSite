@@ -15,28 +15,20 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <div>
-      <Head>
-        <title>My Web Site</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
-      </Head>
-
       {/* <ColorSchemeProvider
         colorScheme={colorScheme}
         toggleColorScheme={toggleColorScheme}
       > */}
-        <MantineProvider
-          withGlobalStyles
-          withNormalizeCSS
-          theme={{
-            fontFamily: "Inter, sans-serif",
-            colorScheme: "light",
-          }}
-        >
-          <Component {...pageProps} />
-        </MantineProvider>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          fontFamily: "Inter, sans-serif",
+          colorScheme: "light",
+        }}
+      >
+        <Component {...pageProps} />
+      </MantineProvider>
       {/* </ColorSchemeProvider> */}
     </div>
   );
