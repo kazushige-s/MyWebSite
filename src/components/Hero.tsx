@@ -1,15 +1,19 @@
-import { Image } from "@mantine/core";
+import { Center, Image, Loader } from "@mantine/core";
 import React from "react";
 
 export const Hero = () => {
   return (
     <>
-      <Image
-        // width={1440}
-        // height={480}
-        src="https://source.unsplash.com/random/1480x480/"
-        alt="Unsplash image"
-      />
+      {null ? (
+        <Center>
+          <Loader />
+        </Center>
+      ) : (
+        <Image
+          src="https://source.unsplash.com/random/1480x480/"
+          alt="Unsplash image"
+        />
+      )}
     </>
   );
 };
