@@ -5,8 +5,7 @@ import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 export const SNS = () => {
   return (
-    <div>
-      {" "}
+    <div className="flex">
       <Group className="ml-3">
         <Link target="_blank" href="https://twitter.com/eigablog_kazu">
           <BrandTwitter />

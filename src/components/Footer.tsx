@@ -1,55 +1,38 @@
+import { MENU } from "@/src/components/Header/menu";
+import { SNS } from "@/src/components/SNS/SNS";
 import { Container, Divider, Group, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 import React from "react";
-import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 export const Footer = () => {
+  const media = useMediaQuery("(min-width: 768px)");
+
   return (
     <>
       <Divider my="lg" className="mt-20" />
-      <Container className="flex justify-between">
-        <Group className="ml-3">
-          <Link target="_blank" href="https://twitter.com/eigablog_kazu">
-            <BrandTwitter />
-          </Link>
-          <Link
-            target="_blank"
-            href="https://www.instagram.com/eigasukisuki_kazu/"
-          >
-            <BrandInstagram />
-          </Link>
-          <Link target="_blank" href="https://github.com/kazushige-s">
-            <BrandGithub />
-          </Link>
-        </Group>
 
-        <Group>
-          <Link
-            href="/profile"
-            className=" text-black no-underline hover:text-blue-500"
-          >
-            プロフィール
-          </Link>
-          <Link
-            href="/blog"
-            className="text-black no-underline  hover:text-blue-500"
-          >
-            ブログ
-          </Link>
-          <Link
-            href="/news"
-            className="text-black no-underline  hover:text-blue-500"
-          >
-            ポートフォリオ
-          </Link>
-          <Link
-            href="/blog"
-            className="text-black no-underline  hover:text-blue-500"
-          >
-            お問い合わせ
-          </Link>
-        </Group>
-      </Container>
+      {!media ? null : (
+        <Container className="flex justify-between">
+          <SNS />
+          <Group>
+            {MENU.map((item, i) => {
+              return (
+                <ul key={i} className="m-0 list-none p-0">
+                  <li>
+                    <Link
+                      href={item.href}
+                      className="text-black no-underline hover:text-blue-500"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                </ul>
+              );
+            })}
+          </Group>
+        </Container>
+      )}
       <small>
         <Text className="my-8 text-center">&copy;2023 My Web Site</Text>
       </small>
