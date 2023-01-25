@@ -1,5 +1,5 @@
 import { MENU } from "@/src/components/Header/menu";
-import { SNS } from "@/src/components/SNS/SNS";
+import { SnsItem } from "@/src/components/SNS/SnsItem";
 import { ActionIcon, Burger, Drawer, Group } from "@mantine/core";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -58,7 +58,7 @@ export const SpHeader = () => {
 
           {/* SNS */}
           <div className="mt-10">
-          <SNS/>
+            <SnsItem />
           </div>
         </Drawer>
       )}

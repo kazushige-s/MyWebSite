@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
-export const SNS = () => {
+export const SnsItem = () => {
   return (
     <div className="flex">
       <Group className="ml-3">

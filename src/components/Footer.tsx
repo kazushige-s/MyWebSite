@@ -1,5 +1,5 @@
 import { MENU } from "@/src/components/Header/menu";
-import { SNS } from "@/src/components/SNS/SNS";
+import { SnsItem } from "@/src/components/SNS/SnsItem";
 import { Container, Divider, Group, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
@@ -14,7 +14,7 @@ export const Footer = () => {
 
       {!media ? null : (
         <Container className="flex justify-between">
-          <SNS />
+          <SnsItem />
           <Group>
             {MENU.map((item, i) => {
               return (
