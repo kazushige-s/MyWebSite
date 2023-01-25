@@ -1,11 +1,10 @@
-import { useState } from "react";
 import React from "react";
 import { PcHeader } from "@/src/components/Header/PcHeader";
 import { SpHeader } from "@/src/components/Header/SpHeader";
 import { ActionIcon, Container } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
-import { Moon, Sun } from "tabler-icons-react";
+import { Moon } from "tabler-icons-react";
 
 export const Header = () => {
   const media = useMediaQuery("(min-width: 768px)");
