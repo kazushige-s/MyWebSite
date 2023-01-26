@@ -47,7 +47,7 @@ export const SpHeader = () => {
                       href={item.href}
                       className="text-black no-underline hover:text-blue-500"
                     >
-                      <a>{item.title}</a>
+                      {item.title}
                     </Link>
                   </li>
                 </ul>
