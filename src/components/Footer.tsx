@@ -10,7 +10,7 @@ export const Footer = () => {
 
   return (
     <>
-      <Divider my="lg" className="mt-20" />
+      <Divider my="lg" className="mt-5" />
 
       {!media ? null : (
         <Container className="flex justify-between">
