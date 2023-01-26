@@ -24,7 +24,7 @@ const blog: NextPage<Props> = (props) => {
     <Layout title="Blog">
       <div>
         <h1 className="font-bold">Blog</h1>
-        <ul>
+        <ol>
           {props.contents.map((content) => (
             <li key={content.id} className="mt-3">
               <Link
@@ -39,7 +39,7 @@ const blog: NextPage<Props> = (props) => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </Layout>
   );
