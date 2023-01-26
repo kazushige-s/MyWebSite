@@ -15,7 +15,7 @@ export const Header = () => {
   return (
     <div className="sticky top-0 z-50 bg-white">
       <Container>
-        <header className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           {/* スマホ用ヘッダー */}
           {media ? null : <SpHeader />}
 
@@ -41,7 +41,7 @@ export const Header = () => {
               <Moon size={18} />
             </ActionIcon>
           </nav>
-        </header>
+        </div>
       </Container>
     </div>
   );

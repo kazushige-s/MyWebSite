@@ -4,7 +4,6 @@ import { ActionIcon, Burger, Drawer, Group } from "@mantine/core";
 import Link from "next/link";
 import React, { useState } from "react";
 import { X } from "tabler-icons-react";
-import { BrandGithub, BrandInstagram, BrandTwitter } from "tabler-icons-react";
 
 export const SpHeader = () => {
   const [opened, setOpened] = useState(false);
