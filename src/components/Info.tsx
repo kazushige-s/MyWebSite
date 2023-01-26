@@ -5,7 +5,7 @@ export const Info = () => {
   return (
     <>
       <Container className="mx-auto mt-10">
-        <Container size="sm" className="border-solid">
+        <Container className="border-solid">
           <Center>
             <Text className="my-5 text-2xl font-bold">最新記事</Text>
           </Center>
