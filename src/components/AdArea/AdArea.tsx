@@ -6,13 +6,13 @@ export const AdArea = () => {
     <div>
       <Container className="mt-10">
         <Grid my="md">
-          <Grid.Col lg={12} sm={4}>
+          <Grid.Col md={6} lg={4}>
             <CustomCard />
           </Grid.Col>
-          <Grid.Col lg={12} sm={4}>
+          <Grid.Col md={6} lg={4}>
             <CustomCard />
           </Grid.Col>
-          <Grid.Col lg={12} sm={4}>
+          <Grid.Col md={6} lg={4}>
             <CustomCard />
           </Grid.Col>
         </Grid>
