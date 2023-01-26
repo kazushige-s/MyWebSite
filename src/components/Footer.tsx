@@ -24,7 +24,7 @@ export const Footer = () => {
                       href={item.href}
                       className="text-black no-underline hover:text-blue-500"
                     >
-                      {item.title}
+                      <a>{item.title}</a>
                     </Link>
                   </li>
                 </ul>
