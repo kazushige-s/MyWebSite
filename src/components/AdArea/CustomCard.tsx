@@ -14,13 +14,13 @@ export const CustomCard = () => {
           />
         </Card.Section>
         <Group position="apart" my="md">
-          <Text weight={800}>テスト</Text>
+          <Text weight={800}>広告エリア</Text>
           <Badge color="pink" radius="lg" variant="filled">
-            テスト
+            広告
           </Badge>
         </Group>
         <Group my="md">
-          <Text size="sm">テストテストテスト</Text>
+          <Text size="sm">お仕事募集</Text>
         </Group>
       </Card>
     </div>

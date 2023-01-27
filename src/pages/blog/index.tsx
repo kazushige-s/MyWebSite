@@ -4,7 +4,7 @@ import { client } from "@/src/libs/client";
 import { GetStaticProps, NextPage } from "next";
 import { MicroCMSListResponse } from "microcms-js-sdk";
 import Link from "next/link";
-import { Divider } from "@mantine/core";
+import { Container } from "@mantine/core";
 
 export type Blog = {
   id: string;
@@ -22,25 +22,27 @@ type Props = MicroCMSListResponse<Blog>;
 const blog: NextPage<Props> = (props) => {
   return (
     <Layout title="Blog">
-      <div>
-        <h1 className="font-bold">Blog</h1>
-        <ol>
-          {props.contents.map((content) => (
-            <li key={content.id} className="mt-3">
-              <Link
-                href={`/blog/${content.id}`}
-                className="
+      <Container>
+        <div>
+          <h1 className="font-bold">Blog</h1>
+          <ol>
+            {props.contents.map((content) => (
+              <li key={content.id} className="mt-3">
+                <Link
+                  href={`/blog/${content.id}`}
+                  className="
                 text-lg
                 text-black
                 hover:text-blue-500"
-                no-underline
-              >
-                {content.title}
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </div>
+                  no-underline
+                >
+                  {content.title}
+                </Link>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </Container>
     </Layout>
   );
 };

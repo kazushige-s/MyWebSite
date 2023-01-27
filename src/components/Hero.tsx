@@ -8,29 +8,29 @@ export const Hero = () => {
       <Carousel slideSize="70%" slideGap="md" loop>
         <Carousel.Slide>
           <Image
-            src="https://source.unsplash.com/featured/?fashion"
+            src="https://source.unsplash.com/featured/?dog/"
             alt="Unsplash image"
             width={1480}
             height={480}
-            fit="cover"
+            fit="scale-down"
           />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image
-            src="https://source.unsplash.com/featured/?coffe"
+            src="https://source.unsplash.com/featured/?fashion/"
             alt="Unsplash image"
             width={1480}
             height={480}
-            fit="cover"
+            fit="scale-down"
           />
         </Carousel.Slide>
         <Carousel.Slide>
           <Image
-            src="https://source.unsplash.com/featured/?dog"
+            src="https://source.unsplash.com/featured/?office/"
             alt="Unsplash image"
             width={1480}
             height={480}
-            fit="cover"
+            fit="scale-down"
           />
         </Carousel.Slide>
       </Carousel>
