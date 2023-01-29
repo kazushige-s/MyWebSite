@@ -4,7 +4,7 @@ import { client } from "@/src/libs/client";
 import { GetStaticProps, NextPage } from "next";
 import { MicroCMSListResponse } from "microcms-js-sdk";
 import Link from "next/link";
-import { Container } from "@mantine/core";
+import { Center, Container } from "@mantine/core";
 
 export type Blog = {
   id: string;
@@ -24,7 +24,9 @@ const blog: NextPage<Props> = (props) => {
     <Layout title="Blog">
       <Container>
         <div>
-          <h1 className="font-bold">Blog</h1>
+          <Center>
+            <h2 className="font-bold">Blog</h2>
+          </Center>
           <ol>
             {props.contents.map((content) => (
               <li key={content.id} className="mt-3">
