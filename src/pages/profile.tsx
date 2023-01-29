@@ -1,6 +1,6 @@
-import { CareerData } from "@/src/components/Career/CareerData";
+import { CareerData, SkillData } from "@/src/components/Career/CareerData";
 import { Layout } from "@/src/components/Layout";
-import { Center, Flex, Group, Image, Table, Text } from "@mantine/core";
+import { Center, Grid, Group, Image, Table, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import React from "react";
 
@@ -33,17 +33,33 @@ const Profile = () => {
         />
 
         <Group className="p-5">
-          <Text sx={{ fontFamily: "Noto Sans CJK JP" }}>
+          <Text>
             映画好き。本好き。近ごろはプログラミングにフルコミット。
-            映画好きが高じて、WordPressにて映画ブログを開始→HTML、CSSをいじりたい!→
+            映画好きが高じて、WordPressにて映画ブログを開始→「HTML、CSSをいじりたい!」→
             ドットインストールにてプログラミングの勉強開始→現在は『IT
             KINGDOM』でReact、TypeScriptを勉強中。
           </Text>
-          <Text fw={700} sx={{ fontFamily: "Noto Sans CJK JP" }}>
-            かず
-          </Text>
+          <Text fw={700}>かず</Text>
         </Group>
       </div>
+
+      {/* スキルエリア */}
+      <Center>
+        <h3 className="my-10 font-bold">スキル</h3>
+      </Center>
+
+      <Grid>
+        {SkillData.map((skill, i) => {
+          return (
+            <Grid.Col key={i} span={4} xs={3} sm={2}>
+              <div className="text-center">
+                <skill.icon size={50} />
+                <p className="m-0">{skill.name}</p>
+              </div>
+            </Grid.Col>
+          );
+        })}
+      </Grid>
 
       {/* 経歴エリア */}
       <Center>

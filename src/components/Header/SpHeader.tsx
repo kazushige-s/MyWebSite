@@ -23,9 +23,9 @@ export const SpHeader = () => {
           padding="xl"
           size="sm"
           withCloseButton={false}
-          transition="fade"
-          transitionDuration={250}
-          transitionTimingFunction="ease"
+          // transition="rotate-left"
+          // transitionDuration={250}
+          // transitionTimingFunction="ease"
         >
           {/* 閉じるボタン */}
           <ActionIcon
@@ -39,6 +39,12 @@ export const SpHeader = () => {
 
           {/* メニュー */}
           <Group className="mt-5 flex-col items-start">
+            <Link
+              href="/"
+              className="text-black no-underline hover:text-blue-500"
+            >
+              Home
+            </Link>
             {MENU.map((item, i) => {
               return (
                 <ul key={i} className="m-0 list-none p-0">
