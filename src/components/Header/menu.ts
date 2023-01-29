@@ -1,5 +1,9 @@
 export const MENU = [
   {
+    title: "Home",
+    href: "/",
+  },
+  {
     title: "プロフィール",
     href: "/profile",
   },
