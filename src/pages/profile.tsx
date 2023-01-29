@@ -33,15 +33,13 @@ const Profile = () => {
         />
 
         <Group className="p-5">
-          <Text sx={{ fontFamily: "Noto Sans CJK JP" }}>
+          <Text>
             映画好き。本好き。近ごろはプログラミングにフルコミット。
             映画好きが高じて、WordPressにて映画ブログを開始→HTML、CSSをいじりたい!→
             ドットインストールにてプログラミングの勉強開始→現在は『IT
             KINGDOM』でReact、TypeScriptを勉強中。
           </Text>
-          <Text fw={700} sx={{ fontFamily: "Noto Sans CJK JP" }}>
-            かず
-          </Text>
+          <Text fw={700}>かず</Text>
         </Group>
       </div>
 
