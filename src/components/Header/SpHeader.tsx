@@ -23,9 +23,9 @@ export const SpHeader = () => {
           padding="xl"
           size="sm"
           withCloseButton={false}
-          transition="fade"
-          transitionDuration={250}
-          transitionTimingFunction="ease"
+          // transition="rotate-left"
+          // transitionDuration={250}
+          // transitionTimingFunction="ease"
         >
           {/* 閉じるボタン */}
           <ActionIcon
