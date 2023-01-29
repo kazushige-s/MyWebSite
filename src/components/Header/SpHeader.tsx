@@ -21,7 +21,7 @@ export const SpHeader = () => {
           opened={opened}
           onClose={() => setOpened(false)}
           padding="xl"
-          size="md"
+          size="sm"
           withCloseButton={false}
           transition="fade"
           transitionDuration={250}
