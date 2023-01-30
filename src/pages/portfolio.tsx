@@ -28,7 +28,7 @@ const Portfolio = () => {
             My Web Site
           </Text>
           <Text className="mt-3">
-            このサイトです。Next.js、TypeScript、CSSはTailwindCSSを使用して制作しています。
+            このサイトです。Next.js、TypeScript、TailwindCSSを使用して制作しています。
             UIライブラリはMantineを使用しています。
             ブログ部分及びお問い合わせページはMicroCMSを使用しています。
           </Text>
