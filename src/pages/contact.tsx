@@ -1,5 +1,12 @@
 import { Layout } from "@/src/components/Layout";
-import { Box, Button, Center, Group, Textarea, TextInput } from "@mantine/core";
+import {
+  Box,
+  Button,
+  Center,
+  Group,
+  Textarea,
+  TextInput,
+} from "@mantine/core";
 import { useForm } from "@mantine/form";
 import React from "react";
 
@@ -46,9 +53,9 @@ const Contact = () => {
           />
 
           <Group position="center" mt="md">
-            <Button type="submit" color="dark" radius="xl">
-              Send Message
-            </Button>
+              <Button disabled type="submit" color="dark" radius="xl">
+                Send Message
+              </Button>
           </Group>
         </form>
       </Box>
