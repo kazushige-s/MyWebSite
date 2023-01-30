@@ -29,6 +29,7 @@ const Profile = () => {
           radius={90}
           height={180}
           width={180}
+          withPlaceholder
           className="m-auto"
         />
 
