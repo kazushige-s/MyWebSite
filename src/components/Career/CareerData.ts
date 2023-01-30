@@ -33,7 +33,7 @@ export const SkillData = [
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
-  { name: "Vercrl", icon: SiVercel },
+  { name: "Vercel", icon: SiVercel },
   { name: "Github", icon: SiGithub },
   { name: "AutoCad", icon: SiAutodesk },
 ];
