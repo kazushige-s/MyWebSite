@@ -9,7 +9,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVercel,
-} from "react-icons/Si";
+} from "react-icons/si";
 
 export const CareerData = [
   {
