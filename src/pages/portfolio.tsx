@@ -16,7 +16,7 @@ const Portfolio = () => {
       <div className={media ? "mb-10 mt-12 flex h-60" : "h-min flex-col"}>
         <Image
           // src="@/public/mywebsite.png"
-          src="https://source.unsplash.com/featured/?programing/"
+          src="https://source.unsplash.com/featured/?macbook/"
           alt="MyWebSite image"
           width={320}
           height={240}
