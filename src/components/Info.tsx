@@ -14,8 +14,7 @@ export const Info = () => {
               <Text className="my-5 text-2xl font-bold underline">お知らせ</Text>
             </Center>
             <ul className="m-0 mb-5">
-              <li>ダークモードボタンは工事中</li>
-              <li>お問い合わせフォームも裏側を工事中</li>
+              <li>お問い合わせフォームは裏側を工事中です</li>
               <li>写真はすべてunsplashから取ってきたダミーの画像です</li>
             </ul>
         </Container>

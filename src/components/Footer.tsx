@@ -22,7 +22,7 @@ export const Footer = () => {
                   <li>
                     <Link
                       href={item.href}
-                      className="text-black no-underline hover:text-blue-500"
+                      className="hover:text-blue-500"
                     >
                       {item.title}
                     </Link>

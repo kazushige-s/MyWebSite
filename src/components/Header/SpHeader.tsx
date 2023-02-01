@@ -39,20 +39,12 @@ export const SpHeader = () => {
 
           {/* メニュー */}
           <Group className="mt-5 flex-col items-start">
-            <Link
-              href="/"
-              className="text-black no-underline hover:text-blue-500"
-            >
-              Home
-            </Link>
+            <Link href="/">Home</Link>
             {MENU.map((item, i) => {
               return (
                 <ul key={i} className="m-0 list-none p-0">
                   <li>
-                    <Link
-                      href={item.href}
-                      className="text-black no-underline hover:text-blue-500"
-                    >
+                    <Link href={item.href} className="hover:text-blue-500">
                       {item.title}
                     </Link>
                   </li>
