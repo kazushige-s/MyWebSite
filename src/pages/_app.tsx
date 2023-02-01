@@ -5,31 +5,30 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import type { AppProps } from "next/app";
-import Head from "next/head";
 import { useState } from "react";
 
 function App({ Component, pageProps }: AppProps) {
-  // const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
-  // const toggleColorScheme = (value?: ColorScheme) =>
-  //   setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
+  const [colorScheme, setColorScheme] = useState<ColorScheme>("light");
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
 
   return (
     <div>
-      {/* <ColorSchemeProvider
+      <ColorSchemeProvider
         colorScheme={colorScheme}
         toggleColorScheme={toggleColorScheme}
-      > */}
-      <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{
-          fontFamily: "Inter, sans-serif",
-          colorScheme: "light",
-        }}
       >
-        <Component {...pageProps} />
-      </MantineProvider>
-      {/* </ColorSchemeProvider> */}
+        <MantineProvider
+          withGlobalStyles
+          withNormalizeCSS
+          theme={{
+            fontFamily: "Inter, sans-serif",
+            colorScheme,
+          }}
+        >
+          <Component {...pageProps} />
+        </MantineProvider>
+      </ColorSchemeProvider>
     </div>
   );
 }

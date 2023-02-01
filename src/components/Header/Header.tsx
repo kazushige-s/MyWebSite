@@ -9,20 +9,16 @@ import { Moon, Sun } from "tabler-icons-react";
 export const Header = () => {
   const media = useMediaQuery("(min-width: 768px)");
 
-  // const { colorScheme, toggleColorScheme } = useMantineColorScheme();
-  // const dark = colorScheme === "dark";
+  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const dark = colorScheme === "dark";
 
   return (
-    <div className="sticky top-0 z-50 bg-white">
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* スマホ用ヘッダー */}
           {media ? null : <SpHeader />}
 
-          <Link
-            href="/"
-            className="ml-3 font-mono text-2xl font-bold text-black no-underline"
-          >
+          <Link href="/" className="ml-3 font-mono text-2xl font-bold">
             My Web Site
           </Link>
 
@@ -32,17 +28,15 @@ export const Header = () => {
 
             {/* ダークモード切り替えボタン */}
             <ActionIcon
-              // color={dark ? "yellow" : "blue"}
-              // onClick={() => toggleColorScheme()}
-              size="lg"
               variant="outline"
+              color={dark ? "yellow" : "blue"}
+              onClick={() => toggleColorScheme()}
+              title="Toggle color scheme"
             >
-              {/* {dark ? <Sun size={18} /> : <Moon size={18} />} */}
-              <Moon size={18} />
+              {dark ? <Sun size={18} /> : <Moon size={18} />}
             </ActionIcon>
           </nav>
         </div>
       </Container>
-    </div>
   );
 };

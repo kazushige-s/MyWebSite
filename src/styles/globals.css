@@ -2,3 +2,16 @@
 /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
