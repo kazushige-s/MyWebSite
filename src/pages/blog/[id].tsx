@@ -1,7 +1,7 @@
 import { Layout } from "@/src/components/Layout";
 import { client } from "@/src/libs/client";
 import { Blog } from "@/src/pages/blog";
-import { Divider, Image } from "@mantine/core";
+import { Divider, Image, TypographyStylesProvider } from "@mantine/core";
 import dayjs from "dayjs";
 import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
@@ -27,7 +27,9 @@ const BlogId: NextPage<Props> = (props) => {
           withPlaceholder
           fit="scale-down"
         />
+        <TypographyStylesProvider>
         <div dangerouslySetInnerHTML={{ __html: props.content }} />
+        </TypographyStylesProvider>
       </Layout>
     </div>
   );
