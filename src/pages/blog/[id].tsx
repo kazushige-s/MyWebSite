@@ -1,7 +1,7 @@
 import { Layout } from "@/src/components/Layout";
 import { client } from "@/src/libs/client";
 import { Blog } from "@/src/pages/blog";
-import { Divider } from "@mantine/core";
+import { Divider, Image } from "@mantine/core";
 import dayjs from "dayjs";
 import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
@@ -10,6 +10,8 @@ import React from "react";
 type Props = Blog & MicroCMSContentId & MicroCMSDate;
 
 const BlogId: NextPage<Props> = (props) => {
+  // console.log(props);
+
   return (
     <div>
       <Layout title="Blog">
@@ -18,6 +20,13 @@ const BlogId: NextPage<Props> = (props) => {
           {dayjs(props.publishedAt).format("YYYY-MM-DD HH:mm:ss")}
         </time>
         <Divider my="sm" />
+        <Image
+          src={props.eyecatch.url}
+          alt="image"
+          height={300}
+          withPlaceholder
+          fit="scale-down"
+        />
         <div dangerouslySetInnerHTML={{ __html: props.content }} />
       </Layout>
     </div>
