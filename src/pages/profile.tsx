@@ -37,8 +37,8 @@ const Profile = () => {
           <Text>
             映画好き。本好き。近ごろはプログラミングにフルコミット。
             映画好きが高じて、WordPressにて映画ブログを開始→「HTML、CSSをいじりたい!」→
-            ドットインストールにてプログラミングの勉強開始→現在は『IT
-            KINGDOM』でReact、TypeScriptを勉強中。
+            ドットインストールにてプログラミングの勉強開始→現在はKindle UnlimitedやUdemyの講座でReact、TypeScriptを勉強中。
+            基本情報技術者試験の勉強もがんばっています。
           </Text>
           <Text fw={700}>かず</Text>
         </Group>
