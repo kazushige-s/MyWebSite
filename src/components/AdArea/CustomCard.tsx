@@ -8,7 +8,7 @@ export const CustomCard = () => {
         <Card.Section>
           <Image
             height={160}
-            src="https://source.unsplash.com/random/"
+            src="https://source.unsplash.com/featured/?woman/"
             alt="Norway"
             withPlaceholder
           />
