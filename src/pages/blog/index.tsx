@@ -7,7 +7,6 @@ import Link from "next/link";
 import {
   Card,
   Center,
-  Container,
   Grid,
   Group,
   Image,
