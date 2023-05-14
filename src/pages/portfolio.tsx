@@ -1,5 +1,5 @@
 import { Layout } from "@/src/components/Layout";
-import { Button, Center, Image, Text } from "@mantine/core";
+import { Button, Center, Image, Space, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 import React from "react";
@@ -37,6 +37,7 @@ const Portfolio = () => {
               GitHubページへ
             </Button>
           </Link>
+          <Space h="xl" />
         </span>
       </div>
 
@@ -72,6 +73,7 @@ const Portfolio = () => {
               GitHubページへ
             </Button>
           </Link>
+          <Space h="xl" />
         </span>
       </div>
 
@@ -107,6 +109,7 @@ const Portfolio = () => {
               GitHubページへ
             </Button>
           </Link>
+          <Space h="xl" />
         </span>
       </div>
     </Layout>
